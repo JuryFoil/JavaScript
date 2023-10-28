@@ -50,40 +50,80 @@
 
 
 //Mayor o menor que
-// let n1=prompt("Introduce un numero");
-// let n2=prompt("Introduce otro numero");
+let n1=prompt("Introduce un numero");
+let n2=prompt("Introduce otro numero");
 
-// if (n1<n2) {
-//     document.write("El numero "+n1+" es menor que el numero "+n2);
+if (n1>n2) {
+    document.write("El numero "+n1+" es menor que el numero "+n2);
     
-// } else {
-//     if (n1>n2) {
-//         document.write("El numero "+n1+" es mayor que el numero "+n2);
+} else {
+    if (n1<n2) {
+        document.write("El numero "+n1+" es mayor que el numero "+n2);
         
-//     } else {
-//         document.write("Los numeros introducidos son iguales")
-//     }
+    } else {
+        document.write("Los numeros introducidos son iguales")
+    }
     
-// }
+}
 
-// //Par o impar
+// // Par o impar
 // let nu=prompt("Introduce un numero");
-// // let res= nu%2
+
 // if (nu % 2==0) {
 //     document.write("El numero es par");
 // } else {
 //     document.write("El numero es impar");
 // }
 
+
+
 //Pedir dos numeros enteros y devolver el cociente, es decir, el resultado de 
 //Dividir el numero 1 entre el numero 2, pero si uno de los numero es 0, mandar mensaje de error
+//Division
+// let nu1=parseFloat(prompt("Introduce un numero entero"));
+// let nu2=parseFloat(prompt("Introduce otro numero entero"));
 
-let nu1=prompt("Introduce un numero entero");
-let nu2=prompt("Introduce otro numero entero");
+// if ((nu1||nu2)===0) {
+//     alert("Error, ambos numeros deben ser mayor a 0");.
+// } else {
+//     let div=nu1/nu2;
+//     document.write("El resultado de la operacion es " + div);
+// }
 
-if ((nu1)||(nu2)==0) {
-    alert("Error, ambos numeros deben ser mayor a 0");
-} else {
-    let div=nu1/nu2;
-    document.write("El resultado de la operacion es " + div);
-}
+// let nu1=prompt("Introduce un numero entero");
+// let nu2=prompt("Introduce otro numero entero");
+
+// if (nu1>0&&nu2>0) {
+//     document.write("El resultado de la operacion es " + (nu1/nu2));
+// } else {
+//     alert("Error, ambos numeros deben ser mayor a 0");
+// }
+
+
+
+// //Calculadora
+// let nm1=parseFloat(prompt("Introduce un numero"));
+// let nm2=parseFloat(prompt("Introduce otro numero"));
+
+// let op=prompt("¿Que operacion deseas realizar?--> a)Multiplicacion, b)Division, c)Suma, d)Resta").toLowerCase();
+
+// switch (op) {
+//     case "a":
+//         alert("El resultado de la multiplicacion es: "+(nm1*nm2));
+//     break;
+
+//     case "b":
+//         alert("El resultado de la division es: "+(nm1/nm2));
+//     break;
+
+//     case "c":
+//         alert("El resultado de la suma es: "+(nm1+nm2));
+//     break;
+
+//     case "d":
+//         alert("El resultado de la resta es: "+(nm1-nm2));
+    
+//     default:
+//         alert("ninguna operacion fue seleccionada");
+//         break;
+// }
